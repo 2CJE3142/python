@@ -15,9 +15,9 @@ with open(secret_path) as f:
 def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="",
-        database="test"
+        user="test_user",
+        password="password",
+        database="health"
     )
 
 def get_tokens():
